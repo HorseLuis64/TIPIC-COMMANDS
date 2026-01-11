@@ -1,0 +1,77 @@
+{
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": true
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    
+  "files.eol": "\n",
+  "files.autoGuessEncoding": true,
+  "files.autoSave": "afterDelay",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  
+  "vim.insertModeKeyBindings": [
+  {
+    "before": ["j", "k"],
+    "after": ["<Esc>"]
+  }
+  
+],
+
+"vim.leader": " ",
+"vim.normalModeKeyBindingsNonRecursive": [
+  {
+    "before": ["<leader>", "e"],
+    "commands": ["workbench.view.explorer"],
+  
+  },
+  {
+        "before": [";"],
+    "after": ["$"]
+
+  }  ,
+  {
+    "before": ["j"],
+    "after": ["k"]
+  },
+{
+
+      "before": ["k"],
+    "after": ["j"]
+},
+  {
+    "before": ["x"],
+    "after": ["\"", "_", "x"]
+}
+
+ 
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+  {
+    "before": ["j"],
+    "after": ["k"]
+  },
+  {
+    "before": ["k"],
+    "after": ["j"]
+  },
+  {
+ "before": [";"],
+    "after": ["$"]
+
+  }
+]
+,
+"code-runner.runInTerminal": true
+
+
+
+    
+
+}
