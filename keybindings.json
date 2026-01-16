@@ -5,13 +5,10 @@
         "command": "workbench.files.action.createFileFromExplorer",
         "when": "!inputFocus"
     },
+   
+
     {
-        "key": "ctrl+capslock t",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-    },
-    {
-        "key": "ctrl+shift+oem_3",
+        "key": "ctrl+shift+o",
         "command": "-workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     },
@@ -43,6 +40,24 @@
   "key": "k",
   "command": "list.focusDowhn",
   "when": "explorerViewletVisible && listFocus"
+},
+{
+  "key": "ctrl+a ctrl+o",
+  "command": "workbench.action.terminal.new"
+},
+{
+  "key": "ctrl+a ctrl+s",
+  "command": "workbench.action.terminal.toggleTerminal"
+},
+{
+  "key": "k",
+  "command": "list.focusDown",
+  "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+},
+{
+  "key": "down",
+  "command": "-list.focusDown",
+  "when": "listFocus && !inputFocus && !treestickyScrollFocused"
 }
 
 

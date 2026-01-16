@@ -1,4 +1,8 @@
 {
+
+      "vim.handleKeys": {
+    "<C-;>": true
+  },
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -48,7 +52,16 @@
   {
     "before": ["x"],
     "after": ["\"", "_", "x"]
+},
+{
+  "before": ["<C-I>"],
+  "after": ["0"]
+},
+{
+  "before": ["C-i"],
+  "after": ["^"]
 }
+
 
  
 ],
@@ -65,7 +78,15 @@
  "before": [";"],
     "after": ["$"]
 
-  }
+  },
+  {
+  "before": ["<C-i>"],
+  "after": ["0"]
+},
+{
+  "before": ["C-s"],
+  "after": ["S"]
+}
 ]
 ,
 "code-runner.runInTerminal": true
@@ -75,3 +96,5 @@
     
 
 }
+
+
