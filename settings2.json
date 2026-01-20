@@ -1,0 +1,118 @@
+{
+
+   "vim.handleKeys": {
+  "<C-w>": false,
+  "<C-b>": false,
+  "<C-f>": false,
+  "<C-a>": false,
+  "<C-d>": false,
+  "<C-t>": false
+}
+,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": true
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    
+  "files.eol": "\n",
+  "files.autoGuessEncoding": true,
+  "files.autoSave": "afterDelay",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  
+  "vim.insertModeKeyBindings": [
+  {
+    "before": ["j", "k"],
+    "after": ["<Esc>"]
+  },
+  {
+  "before": ["<C-d>"],
+  "after": ["<End>"]
+}
+
+  
+],
+
+"vim.leader": " ",
+"vim.normalModeKeyBindingsNonRecursive": [
+  {
+    "before": ["<leader>", "e"],
+    "commands": ["workbench.view.explorer"],
+  
+  },{
+    "before": ["<leader>", "o"],
+    "after": ["o", "<Esc>"]
+  },
+  {
+        "before": [";"],
+    "after": ["$"]
+
+  }  ,
+  {
+  "before": ["<C-d>"],
+  "after": ["<End>"]
+}
+,
+  {
+    "before": ["j"],
+    "after": ["k"]
+  },
+{
+
+      "before": ["k"],
+    "after": ["j"]
+},
+  {
+    "before": ["x"],
+    "after": ["\"", "_", "x"]
+},
+{
+  "before": ["<C-I>"],
+  "after": ["0"]
+},
+{
+  "before": ["C-i"],
+  "after": ["^"]
+}
+
+
+ 
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+  {
+    "before": ["j"],
+    "after": ["k"]
+  },
+  {
+    "before": ["k"],
+    "after": ["j"]
+  },
+  {
+ "before": [";"],
+    "after": ["$"]
+
+  },
+  {
+  "before": ["<C-i>"],
+  "after": ["0"]
+},
+{
+  "before": ["C-s"],
+  "after": ["S"]
+}
+]
+,
+"code-runner.runInTerminal": true
+
+
+
+    
+
+}
+

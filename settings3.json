@@ -1,0 +1,121 @@
+{
+"vim.handleKeys": {
+"<C-w>": true,
+"<C-b>": true,
+"<C-f>": true,
+"<C-a>": true,
+"<C-d>": true,
+"<C-t>": true
+},
+
+"github.copilot.enable": {
+"*": false,
+"plaintext": false,
+"markdown": false,
+"scminput": false,
+"python": true
+},
+"github.copilot.nextEditSuggestions.enabled": true,
+
+"terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+"files.eol": "\n",
+"files.autoGuessEncoding": true,
+"files.autoSave": "afterDelay",
+
+"security.allowedUNCHosts": [
+"wsl.localhost"
+],
+
+"vim.leader": " ",
+
+"vim.insertModeKeyBindings": [
+{
+"before": ["j", "k"],
+"after": ["<Esc>"]
+},
+{
+  "before": ["<C-s"],
+  "after" : ["<C-d>"]
+},
+ { "before": ["<C-h>"], "commands": ["deleteLeft"] },
+  { "before": ["<C-l>"], "commands": ["cursorEnd"] },
+   { "before": ["<C-k>"], "commands": ["cursorHome"] },
+ {
+    "before": ["<C-j>"],
+    "commands": [
+      {
+        "command": "type",
+        "args": { "text": "\n" }
+      }
+    ]
+  },
+  { "before": ["<C-u>"], "commands": ["deleteAllLeft"] },
+  { "before": ["<C-w>"], "commands": ["deleteWordLeft"] },
+
+  { "before": ["<C-o>", "o"], "after": ["<Esc>", "o", "i"] },
+  { "before": ["<C-o>", "O"], "after": ["<Esc>", "O", "i"] }
+],
+
+
+"vim.normalModeKeyBindingsNonRecursive": [
+{
+"before": ["<leader>", "e"],
+"commands": ["workbench.view.explorer"]
+},
+{
+"before": [";"],
+"after": ["$"]
+},
+{
+"before": ["j"],
+"after": ["k"]
+},
+{
+"before": ["k"],
+"after": ["j"]
+},
+{
+"before": ["x"],
+"after": ["\"", "_", "x"]
+},
+{
+"before": ["<C-I>"],
+"after": ["0"]
+},
+{
+"before": ["C-i"],
+"after": ["^"]
+},
+{
+  "before": ["<leader>", "o"],
+  "after": ["o", "<Esc>"]
+}
+
+],
+
+"vim.visualModeKeyBindingsNonRecursive": [
+{
+"before": ["j"],
+"after": ["k"]
+},
+{
+"before": ["k"],
+"after": ["j"]
+},
+{
+"before": [";"],
+"after": ["$"]
+},
+{
+"before": ["<C-i>"],
+"after": ["0"]
+},
+{
+"before": ["C-s"],
+"after": ["S"]
+}
+],
+
+"code-runner.runInTerminal": true
+}
