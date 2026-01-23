@@ -1,0 +1,100 @@
+[
+    {
+        "key": "ctrl+space ctrl+h",
+        "command": "workbench.files.action.createFileFromExplorer",
+        "when": "!inputFocus"
+    },
+   
+
+    {
+        "key": "ctrl+shift+o",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.nextEditor"
+  },
+   {
+    "key": "space+ctrl+e",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+oem_102",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+oem_3",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+  "key": "j",
+  "command": "list.focusUp",
+  "when": "explorerViewletVisible && listFocus"
+},
+{
+  "key": "k",
+  "command": "list.focusDowhn",
+  "when": "explorerViewletVisible && listFocus"
+},
+{
+  "key": "ctrl+space ctrl+o",
+  "command": "workbench.action.terminal.new"
+},
+{
+  "key": "ctrl+space ctrl+s",
+  "command": "workbench.action.terminal.toggleTerminal"
+},
+{
+  "key": "k",
+  "command": "list.focusDown",
+  "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+},
+{
+  "key": "down",
+  "command": "-list.focusDown",
+  "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+},
+{
+  "key": "ctrl+space ctrl+c",
+  "command": "explorer.newFolder"
+},
+{
+  "key": "ctrl+space ctrl+k",
+  "command": "workbench.action.toggleAutoSave"
+},
+{
+  "key": "oem_2",
+  "command": "workbench.files.action.createFolderFromExplorer",
+  "when": "view == 'workbench.explorer.fileView'"
+},
+
+{
+  "key": "ctrl+alt+u",
+  "command": "editor.action.addSelectionToNextFindMatch",
+  "when": "editorFocus"
+},
+{
+  "key": "ctrl+d",
+  "command": "-editor.action.addSelectionToNextFindMatch",
+  "when": "editorFocus"
+},
+{
+  "key": "ctrl+space ctrl+x",
+  "command": "workbench.action.closeActiveEditor"
+},
+{
+  "key": "ctrl+w",
+  "command": "-workbench.action.closeActiveEditor"
+}
+
+
+
+]
